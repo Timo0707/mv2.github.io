@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.TopBar {
+    width: 100vw;
+    height: 5vh;
+    background-color: #333;
+
+    overflow: hidden;
+}
+
+.TopButton {
+    width: 150px;
+    height: 100%;
+
+    font-size: 200%;
+    padding: 5px;
+    margin: auto;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f2f2f2;
+    text-align: center;
+
+    float: left;
+    background-color: black;
+
+    transition: transform .3s ease-out, color .3s ease-out, background-color .3s ease-out;
+}
+
+.CurrentSelected {
+    width: 150px;
+    height: 100%;
+
+    font-size: 200%;
+    padding: 5px;
+    margin: auto;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    transform: scale(1.1);
+
+    float: left;
+    background-color: white;
+}
+
+.MenuButton {
+    width: 50px;
+    height: 50px;
+
+    font-size: 200%;
+    padding: 5px;
+    margin: auto;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+
+    float: right;
+    background-color: black;
+    border: none;
+
+    transition: transform .3s ease-out, color .3s ease-out, background-color .3s ease-out;
+}
+
+.TopButton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: black;
+    background-color: rgb(184, 184, 184);
+}
+
+.MenuButton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: black;
+    background-color: white;
+}
+
+.Menu {
+    width: 200px;
+    height: 95vh;
+    position: absolute;
+    top: 5vh;  /* Adjust this value as needed */
+    right: 0;
+    background-color: black;
+    z-index: 2;
+    overflow: hidden;
+    display: none;
+}
+
+.Menu a {
+    width: 100%;
+    height: 40px;
+
+    font-size: 200%;
+    padding: 5px;
+    margin: auto;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+
+    float: left;
+    background-color: #1d1d1d;
+
+    transition: transform .3s ease-out, color .3s ease-out, background-color .3s ease-out;
+}
+
+.Menu a:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: black;
+    background-color: rgb(184, 184, 184);
+}
+
+.LoginFormParent {
+    background-color: black;
+    width: 30%;
+    height: 40%;
+    padding: 10px, 10px;
+    border-radius: 5px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.LoginForm label {
+    color: white;
+    width: 100%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+}
+
+.LoginForm input {
+    width: 98.6%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+
+    transition: transform .3s ease;
+}
+
+.LoginForm button {
+    width: 100%;
+    height: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    bottom: 0;
+    position: absolute;
+    border: none;
+    
+    transition: transform .3s ease;
+}
+
+.LoginForm button:hover {
+    transform: scale(1.1);
+}
+
+.LoginForm input:hover {
+    transform: scale(1.01);
+}
+
+.mainPurchase {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.mainPurchase form {
+    border-radius: 10px;
+    padding: 10px;
+    color: white;   
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    width: 20%;
+    height: 100%;
+}
+
+.mainPurchase form label {
+    color: white;
+    width: 100%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+}
+
+.mainPurchase form input {
+    width: 98%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+}
+
+.mainPurchase form select {
+    width: 100%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+}
+
+.mainPurchase form button {
+    width: 100%;
+    height: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    bottom: 0;
+    /* position: absolute; */
+    border: none;
+    border-radius: 5px;
+    
+    transition: transform .3s ease;
+}
+
+.appointmentDiv {
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    font-weight: bold;
+    background-color: black;
+    width: 20%;
+    height: 100%;
+}
+
+.appointmentDiv p {
+    margin: auto;
+}
